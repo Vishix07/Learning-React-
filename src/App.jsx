@@ -20,6 +20,7 @@ import Userinput from "./UserInput";
 import Form from "./Form";
 import { useFormStatus } from "react-dom";
 import Transition from "./Transition";
+import Lifting from "./Lifting";
 
 
 
@@ -1227,7 +1228,13 @@ function App() {
       //     </div>
       // )
           
-          //  
+          //  Lifting State Up in React js
+
+        return (
+            <>
+              <Lifting />
+            </>
+        )
 
 
 
