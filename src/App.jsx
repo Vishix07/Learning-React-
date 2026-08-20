@@ -22,6 +22,7 @@ import { useFormStatus } from "react-dom";
 import Transition from "./Transition";
 import Lifting from "./Lifting";
 import UpdateObj from "./UpdateObj";
+import UpdateArr from "./UpdateArr";
 
 
 
@@ -1239,13 +1240,19 @@ function App() {
 
     //Update Objects in State
 
-    return (
+    // return (
 
-        <>
-          <UpdateObj />
-        </>
-    )
+    //     <>
+    //       <UpdateObj />
+    //     </>
+    // )
+           //Updating Array in State
 
+        return(
+            <>
+               <UpdateArr />
+            </>
+        )
 }
 
 
