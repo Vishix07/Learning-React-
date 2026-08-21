@@ -24,6 +24,8 @@ import Lifting from "./Lifting";
 import UpdateObj from "./UpdateObj";
 import UpdateArr from "./UpdateArr";
 import UseAction from "./UseAction";
+import { useId } from "react";
+import UseId from "./UseId";
 
 
 
@@ -1259,12 +1261,23 @@ function App() {
 
     //it is uesd to handle froms , it update state based on the result of a form action.
 
-     return (
-        <>
-          <UseAction />
-        </>
-     )
+    //  return (
+    //     <>
+    //       <UseAction />
+    //     </>
+    //  )
 
+         // useId 
+
+         // it gives a unique id , mostly used in form | avoid using it in list.
+
+         return (
+          <>
+            <UseId />
+            <hr />
+            <UseId />
+          </>
+         )
 
 
  }
