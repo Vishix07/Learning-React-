@@ -27,6 +27,7 @@ import UseAction from "./UseAction";
 import { useId } from "react";
 import UseId from "./UseId";
 import Fragments from "./Fragments";
+import useToggle from "./useToggle";
 
 
 
@@ -620,9 +621,9 @@ function App() {
 
   // mostly used to mange side effects
 
-  const [count, setCounter] = useState(0)
-  const [data, setData] = useState(0)
-  const [display, setdisplay] = useState(true)
+  // const [count, setCounter] = useState(0)
+  // const [data, setData] = useState(0)
+  // const [display, setdisplay] = useState(true)
 
   //  function counterFunction(){
   //   console.log("counterFunction",counter);
@@ -1282,10 +1283,41 @@ function App() {
 
   // Fragment in React Js
 
-    return (
-      <Fragments />
-    )
+    // return (
+    //   <Fragments />
+    // )
 
+   // How to make Custom hooks 
+   
+    const [value,toggleValue] = useToggle(true);
+   const [data,setdata] = useToggle(true);
+
+   return (
+    <>
+      <div>
+     <button onClick={toggleValue} >Toggle Heading</button>
+     <button onClick={()=>toggleValue(false)} >Hide Heading</button>
+     <button onClick={()=>toggleValue(true)} >Show Heading</button>
+
+    { 
+      value?<h2>Custom Hooks in React js</h2>:null
+      }
+
+    </div>
+    <hr />
+    <div>
+     <button onClick={setdata} >Toggle Heading</button>
+     <button onClick={()=>setdata(false)} >Hide Heading</button>
+     <button onClick={()=>setdata(true)} >Show Heading</button>
+
+    { 
+      data?<h2>HELL YEAH</h2>:null
+      }
+
+    </div>
+    </>
+    
+   )
     
 }
 
