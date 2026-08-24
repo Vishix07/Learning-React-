@@ -28,6 +28,8 @@ import { useId } from "react";
 import UseId from "./UseId";
 import Fragments from "./Fragments";
 import useToggle from "./useToggle";
+import CollageContext from "./CollageContext";
+import { SubjectContext } from "./ContextData";
 
 
 
@@ -1161,7 +1163,7 @@ function App() {
 
   // useFormStatus Hook in React js 
 
-  //it wont work without form
+  // it wont work without form
 
 
   // const handleSubmit=async()=>{
@@ -1191,9 +1193,9 @@ function App() {
   //         </div>
   //     )
 
-  //useTransition Hook in React js
+  // useTransition Hook in React js
 
-  //it can work without form
+  // it can work without form
 
 
   //  return (
@@ -1202,10 +1204,10 @@ function App() {
   //   </>
   //  )
 
-  //Derived State in React js
+  // Derived State in React js
 
-  //State that is caluclated or derived from other state values or 
-  //props within your component, Drived state can be variable
+  // State that is caluclated or derived from other state values or 
+  // props within your component, Drived state can be variable
 
   // const [users,setUsers]=useState([]);
   // const [user,setUser]=useState('');
@@ -1243,7 +1245,7 @@ function App() {
   //     </>
   // )
 
-  //Update Objects in State
+  // Update Objects in State
 
   // return (
 
@@ -1251,7 +1253,7 @@ function App() {
   //       <UpdateObj />
   //     </>
   // )
-  //Updating Array in State
+  // Updating Array in State
 
   //         return(
   //             <>
@@ -1261,7 +1263,7 @@ function App() {
 
   // useActionState Hook
 
-  //it is uesd to handle froms , it update state based on the result of a form action.
+  // it is uesd to handle froms , it update state based on the result of a form action.
 
   //  return (
   //     <>
@@ -1283,42 +1285,72 @@ function App() {
 
   // Fragment in React Js
 
-    // return (
-    //   <Fragments />
-    // )
+  //   return (
+  //     <Fragments />
+  //   )
 
-   // How to make Custom hooks 
+  //  How to make Custom hooks 
    
-    const [value,toggleValue] = useToggle(true);
-   const [data,setdata] = useToggle(true);
+  //   const [value,toggleValue] = useToggle(true);
+  //  const [data,setdata] = useToggle(true);
 
-   return (
-    <>
-      <div>
-     <button onClick={toggleValue} >Toggle Heading</button>
-     <button onClick={()=>toggleValue(false)} >Hide Heading</button>
-     <button onClick={()=>toggleValue(true)} >Show Heading</button>
+  //  return (
+  //   <>
+  //     <div>
+  //    <button onClick={toggleValue} >Toggle Heading</button>
+  //    <button onClick={()=>toggleValue(false)} >Hide Heading</button>
+  //    <button onClick={()=>toggleValue(true)} >Show Heading</button>
 
-    { 
-      value?<h2>Custom Hooks in React js</h2>:null
-      }
+  //   { 
+  //     value?<h2>Custom Hooks in React js</h2>:null
+  //     }
 
-    </div>
-    <hr />
-    <div>
-     <button onClick={setdata} >Toggle Heading</button>
-     <button onClick={()=>setdata(false)} >Hide Heading</button>
-     <button onClick={()=>setdata(true)} >Show Heading</button>
+  //   </div>
+  //   <hr />
+  //   <div>
+  //    <button onClick={setdata} >Toggle Heading</button>
+  //    <button onClick={()=>setdata(false)} >Hide Heading</button>
+  //    <button onClick={()=>setdata(true)} >Show Heading</button>
 
-    { 
-      data?<h2>HELL YEAH</h2>:null
-      }
+  //   { 
+  //     data?<h2>HELL YEAH</h2>:null
+  //     }
 
-    </div>
-    </>
+  //   </div>
+  //   </>
     
-   )
+  //  )
     
+
+       // Context API
+     
+     //  createContext : To initiate Context APL.
+     //  Provider : use for update or provide data.
+     //  useContext : get data from context api.
+  
+    const [subject,setSubject] = useState('');
+
+  return (
+    <div style={{backgroundColor:"yellow", padding:"10px"}} >
+      
+      <SubjectContext.Provider value={subject}>
+        
+        <select defaultValue={subject} onChange={(event)=>setSubject(event.target.value)} id="">
+          <option value="Math">Math</option>
+          <option value="English">English</option>
+          <option value="Hindi">Hindi</option>
+          <option value="History">History</option>
+          <option value="">Choose subject</option>
+        </select>
+         
+        <h1>Context API</h1>
+        <button onClick={()=>setSubject('')} >Clear Subject</button>
+        <CollageContext />
+      </SubjectContext.Provider>
+    </div>
+  )
+
+  
 }
 
 export default App;
