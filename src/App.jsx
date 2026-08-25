@@ -31,6 +31,8 @@ import useToggle from "./useToggle";
 import CollageContext from "./CollageContext";
 import { SubjectContext } from "./ContextData";
 import ContextApi from "./ContextApi";
+import { BrowserRouter } from "react-router";
+import ReactRouter from "./ReactRouter";
 
 
 
@@ -1331,11 +1333,18 @@ function App() {
   
     
 
-  return (
+  // return (
     
-    <ContextApi />
-  )
+  //   <ContextApi />
+  // )
 
+        // React Router 
+      
+      return(
+
+        <ReactRouter />
+        
+      )
   
 }
 
