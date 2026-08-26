@@ -31,8 +31,10 @@ import useToggle from "./useToggle";
 import CollageContext from "./CollageContext";
 import { SubjectContext } from "./ContextData";
 import ContextApi from "./ContextApi";
-import { BrowserRouter } from "react-router";
+import { BrowserRouter, Routes } from "react-router";
 import ReactRouter from "./ReactRouter";
+import Home from "./Home";
+import BasicPgRR from "./BasicPgRR";
 
 
 
@@ -1340,11 +1342,24 @@ function App() {
 
         // React Router 
       
-      return(
+      // return(
 
-        <ReactRouter />
+      //   <ReactRouter />
         
-      )
+      // )
+
+         // Basic Pages with React-Router
+
+
+         return (
+
+          <>
+           
+           <BasicPgRR />
+
+          </>
+
+         )
   
 }
 
