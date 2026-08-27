@@ -5,12 +5,12 @@ export default function NavLink() {
 
     return (
         <div className="header" >
-         <div>
+            <div>
                 <Link className="link " to="/" >Logo</Link>
             </div>
-          <div>
+            <div>
                 <ul>
-                    <li> 
+                    <li>
                         <Link className="link" to="/" >HOME</Link>
                     </li>
                     <li>
@@ -19,11 +19,14 @@ export default function NavLink() {
                     <li>
                         <Link className="link" to="/login" >LOGIN</Link>
                     </li>
+                    <li>
+                        <Link className="link" to="/college" >COLLEGE</Link>
+                    </li>
                 </ul>
-          </div>
-    </div>
+            </div>
+        </div>
     )
-    
-       
-    
+
+
+
 }

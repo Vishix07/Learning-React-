@@ -1,3 +1,7 @@
+                          
+                            // 404 Page and Redirection
+
+
 import { Link } from "react-router"
 
 export default function PageNotFound(){
