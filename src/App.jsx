@@ -1363,6 +1363,18 @@ function App() {
 
            //Header using React Router
 
+        //  return (
+
+        //   <div>
+           
+        //    <BasicPgRR />
+
+        //   </div>
+
+        //  )
+
+           // 404 Page and Redirection
+
          return (
 
           <div>
@@ -1372,7 +1384,6 @@ function App() {
           </div>
 
          )
-
            
   
 }
