@@ -12,21 +12,53 @@ import DepartmentNav from "./DepartmentNav"
 // Basic Pages with React-Router 
 
 export default function BasicPgRR() {
+                 //Nested Nav
+  // return (
 
-  return (
+  //   <div >
+
+  //     <NavLink />
+
+  //     <Routes>
+
+  //     <Route element={<NavLink />} >
+  //       <Route path="/" element={<Home />} />
+  //       <Route path="/about" element={<About />} />
+  //       <Route path="/login" element={<Login />} />
+  //     </Route>
+
+  //       <Route path="/college" element={<CollegeNav />}>
+  //         <Route path="students" element={<StudentsNav />} />
+  //         <Route path="Department" element={<DepartmentNav />} />
+  //         <Route path="Details" element={<DetailsNav />} />
+  //       </Route>
+
+  //       <Route path="/*" element={<PageNotFound />} />
+  //       {/* <Route path="/*" element={<Navigate to={/Login} } /> */}
+
+  //     </Routes>
+
+  //   </div>
+
+  // )
+                     //Layout and Index Routes
+
+              return (
 
     <div >
 
-      <NavLink />
+      
 
       <Routes>
 
+      <Route element={<NavLink />} >
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
+      </Route>
 
         <Route path="/college" element={<CollegeNav />}>
-          <Route path="students" element={<StudentsNav />} />
+          <Route index element={<StudentsNav />} />
           <Route path="Department" element={<DepartmentNav />} />
           <Route path="Details" element={<DetailsNav />} />
         </Route>
@@ -39,4 +71,18 @@ export default function BasicPgRR() {
     </div>
 
   )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

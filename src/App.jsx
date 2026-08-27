@@ -1388,7 +1388,19 @@ function App() {
 
          //Nested Navigation With React Router
 
-      return (
+      // return (
+
+      //     <div>
+           
+      //      <BasicPgRR />
+
+      //     </div>
+
+      //    )
+   
+               //Layout and Index Routes
+
+         return (
 
           <div>
            
@@ -1397,7 +1409,7 @@ function App() {
           </div>
 
          )
-
+        
   
 }
 

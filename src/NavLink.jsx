@@ -1,10 +1,11 @@
-import { Link } from "react-router"
+import { Link,Outlet } from "react-router"
 import './css/header.css'
 
 export default function NavLink() {
 
     return (
-        <div className="header" >
+        <div>
+            <div className="header" >
             <div>
                 <Link className="link " to="/" >Logo</Link>
             </div>
@@ -24,6 +25,9 @@ export default function NavLink() {
                     </li>
                 </ul>
             </div>
+            
+        </div>
+        <Outlet />
         </div>
     )
 
