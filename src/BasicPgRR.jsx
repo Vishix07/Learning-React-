@@ -10,7 +10,7 @@ export default function BasicPgRR() {
        
          return (
 
-          <>
+          <div >
 
            <NavLink />   
         
@@ -20,7 +20,7 @@ export default function BasicPgRR() {
             <Route path="/login" element={<Login />} />
           </Routes>
 
-          </>
+          </div>
 
          )
 }

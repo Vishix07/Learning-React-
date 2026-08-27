@@ -1,12 +1,29 @@
 import { Link } from "react-router"
+import './css/header.css'
 
 export default function NavLink() {
 
-    return(
-        <div>
-           <Link to="/" ><h1>HOME</h1></Link>
-           <Link to="/about" ><h1>ABOUT</h1></Link>
-           <Link to="/login" ><h1>LOGIN</h1></Link>
-        </div>
+    return (
+        <div className="header" >
+         <div>
+                <Link className="link " to="/" >Logo</Link>
+            </div>
+          <div>
+                <ul>
+                    <li> 
+                        <Link className="link" to="/" >HOME</Link>
+                    </li>
+                    <li>
+                        <Link className="link" to="/about" >ABOUT</Link>
+                    </li>
+                    <li>
+                        <Link className="link" to="/login" >LOGIN</Link>
+                    </li>
+                </ul>
+          </div>
+    </div>
     )
+    
+       
+    
 }

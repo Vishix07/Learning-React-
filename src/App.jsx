@@ -1351,15 +1351,29 @@ function App() {
          // Basic Pages with React-Router
 
 
+        //  return (
+
+        //   <>
+           
+        //    <BasicPgRR />
+
+        //   </>
+
+        //  )
+
+           //Header using React Router
+
          return (
 
-          <>
+          <div>
            
            <BasicPgRR />
 
-          </>
+          </div>
 
          )
+
+           
   
 }
 
