@@ -1400,7 +1400,20 @@ function App() {
    
                //Layout and Index Routes
 
-         return (
+        //  return (
+
+        //   <div>
+           
+        //    <BasicPgRR />
+
+        //   </div>
+
+        //  )
+        
+
+            //Route Prefixes
+          
+       return (
 
           <div>
            
@@ -1409,7 +1422,6 @@ function App() {
           </div>
 
          )
-        
   
 }
 
