@@ -9,6 +9,7 @@ import StudentsNav from "./StudentsNav"
 import DetailsNav from "./DetailsNav"
 import DepartmentNav from "./DepartmentNav"
 import UserList from "./UserList"
+import UserDetail from "./UserDetails"
 
 // Basic Pages with React-Router 
 
@@ -86,6 +87,10 @@ export default function BasicPgRR() {
         <Route element={<NavLink />} >
           <Route path="/" element={<Home />} />
           <Route path="user" element={<UserList />} />
+          <Route path="/user/list?" element={<UserList />} />
+          <Route path="/user/:id" element={<UserDetail />} />
+
+
           <Route path="/in">
             <Route path="/in/user">
               <Route path="/in/user/about" element={<About />} />
@@ -93,6 +98,7 @@ export default function BasicPgRR() {
             </Route>
           </Route>
         </Route>
+
 
         <Route path="/college" element={<CollegeNav />}>
           <Route index element={<StudentsNav />} />

@@ -1440,7 +1440,15 @@ function App() {
 
          // React Router Optional Segment 
          
-         as
+      return (
+
+          <div>
+           
+           <BasicPgRR />
+
+          </div>
+
+         )
       
   
 }
