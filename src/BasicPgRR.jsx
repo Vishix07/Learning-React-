@@ -8,11 +8,12 @@ import PageNotFound from "./PageNotFound"
 import StudentsNav from "./StudentsNav"
 import DetailsNav from "./DetailsNav"
 import DepartmentNav from "./DepartmentNav"
+import UserList from "./UserList"
 
 // Basic Pages with React-Router 
 
 export default function BasicPgRR() {
-                 //Nested Nav
+  //Nested Nav
   // return (
 
   //   <div >
@@ -41,13 +42,13 @@ export default function BasicPgRR() {
   //   </div>
 
   // )
-                     //Layout and Index Routes
+  //Layout and Index Routes
 
   //             return (
 
   //   <div >
 
-      
+
 
   //     <Routes>
 
@@ -72,25 +73,26 @@ export default function BasicPgRR() {
 
   // )
 
-              // Prefix Route
+                    // Route Prefixes
 
-                 return (
+  return (
 
     <div >
 
-      
+
 
       <Routes>
 
-      <Route element={<NavLink />} >
-        <Route path="/" element={<Home />} />
+        <Route element={<NavLink />} >
+          <Route path="/" element={<Home />} />
+          <Route path="user" element={<UserList />} />
           <Route path="/in">
             <Route path="/in/user">
-             <Route path="/in/user/about" element={<About />} />
-             <Route path="/in/user/login" element={<Login />} />
+              <Route path="/in/user/about" element={<About />} />
+              <Route path="/in/user/login" element={<Login />} />
+            </Route>
           </Route>
-          </Route>
-      </Route>
+        </Route>
 
         <Route path="/college" element={<CollegeNav />}>
           <Route index element={<StudentsNav />} />

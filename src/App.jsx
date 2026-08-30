@@ -1413,15 +1413,35 @@ function App() {
 
             //Route Prefixes
           
-       return (
+      //  return (
 
-          <div>
+      //     <div>
            
-           <BasicPgRR />
+      //      <BasicPgRR />
 
-          </div>
+      //     </div>
 
-         )
+      //    )
+
+
+
+        //Dynamic Routes
+
+      // return (
+
+      //     <div>
+           
+      //      <BasicPgRR />
+
+      //     </div>
+
+      //    )
+
+
+         // React Router Optional Segment 
+         
+         as
+      
   
 }
 

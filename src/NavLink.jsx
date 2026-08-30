@@ -31,7 +31,7 @@ export default function NavLink() {
     //     </div>
     // )
              
-              //PreFix Route
+              //Route Prefixes
 
 
     <div>
@@ -52,6 +52,9 @@ export default function NavLink() {
                     </li>
                     <li>
                         <Link className="link" to="/college" >COLLEGE</Link>
+                    </li>
+                    <li>
+                        <Link className="link" to="/user" >USER</Link>
                     </li>
                 </ul>
             </div>
