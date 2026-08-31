@@ -76,6 +76,45 @@ export default function BasicPgRR() {
 
                     // Route Prefixes
 
+  // return (
+
+  //   <div >
+
+
+
+  //     <Routes>
+
+  //       <Route element={<NavLink />} >
+  //         <Route path="/" element={<Home />} />
+  //         <Route path="user" element={<UserList />} />
+  //         
+  //         <Route path="/user/:id" element={<UserDetail />} />
+
+
+  //         <Route path="/in">
+  //           <Route path="/in/user">
+  //             <Route path="/in/user/about" element={<About />} />
+  //             <Route path="/in/user/login" element={<Login />} />
+  //           </Route>
+  //         </Route>
+  //       </Route>
+
+
+  //       <Route path="/college" element={<CollegeNav />}>
+  //         <Route index element={<StudentsNav />} />
+  //         <Route path="Department" element={<DepartmentNav />} />
+  //         <Route path="Details" element={<DetailsNav />} />
+  //       </Route>
+
+  //       <Route path="/*" element={<PageNotFound />} />
+  //       {/* <Route path="/*" element={<Navigate to={/Login} } /> */}
+
+  //     </Routes>
+
+  //   </div>
+
+  // )
+
   return (
 
     <div >
@@ -88,7 +127,7 @@ export default function BasicPgRR() {
           <Route path="/" element={<Home />} />
           <Route path="user" element={<UserList />} />
           <Route path="/user/list?" element={<UserList />} />
-          <Route path="/user/:id" element={<UserDetail />} />
+          <Route path="/user/:id/:name?" element={<UserDetail />} />
 
 
           <Route path="/in">

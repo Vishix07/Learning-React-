@@ -46,7 +46,7 @@ export default function NavLink() {
        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
        <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet" />
 
-                <Link className="link " to="/" style={{fontFamily:"Geo"}} >Logo</Link>
+                <Link className="link " to="/" style={{fontFamily:"Geo", fontSize:"35px" }} >Logo</Link>
             </div>
             <div>
                 <ul>
