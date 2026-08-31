@@ -15,7 +15,7 @@ export default function UserList() {
             {
                 userData.map((item,index)=>(
                   <div key={index} >
-                    <h4><Link to={"/user/"+item.id} >{item.name}</Link></h4>
+                    <h4><Link className="link" to={"/user/"+item.id} >{item.name}</Link></h4>
                   </div>  
                 ))
             }
@@ -24,7 +24,7 @@ export default function UserList() {
             {
                 userData.map((item,index)=>(
                   <div key={index} >
-                    <h4><Link to={"/user/"+item.id+"/"+item.name} >{item.name}</Link></h4>
+                    <h4><Link className="link" to={"/user/"+item.id+"/"+item.name} >{item.name}</Link></h4>
                   </div>  
                 ))
             }

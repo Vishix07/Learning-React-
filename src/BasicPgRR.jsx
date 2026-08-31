@@ -3,13 +3,14 @@ import Home from "./Home"
 import About from "./About"
 import Login from "./Login"
 import CollegeNav from "./CollegeNav"
-import NavLink from "./NavLink"
+import NavBarRR from "./NavBarRR"
 import PageNotFound from "./PageNotFound"
 import StudentsNav from "./StudentsNav"
 import DetailsNav from "./DetailsNav"
 import DepartmentNav from "./DepartmentNav"
 import UserList from "./UserList"
 import UserDetail from "./UserDetails"
+import { Navbar } from "react-bootstrap"
 
 // Basic Pages with React-Router 
 
@@ -19,11 +20,11 @@ export default function BasicPgRR() {
 
   //   <div >
 
-  //     <NavLink />
+  //     <NavBarRR />
 
   //     <Routes>
 
-  //     <Route element={<NavLink />} >
+  //     <Route element={<NavBarRR />} >
   //       <Route path="/" element={<Home />} />
   //       <Route path="/about" element={<About />} />
   //       <Route path="/login" element={<Login />} />
@@ -43,7 +44,7 @@ export default function BasicPgRR() {
   //   </div>
 
   // )
-  //Layout and Index Routes
+                    //Layout and Index Routes
 
   //             return (
 
@@ -53,7 +54,7 @@ export default function BasicPgRR() {
 
   //     <Routes>
 
-  //     <Route element={<NavLink />} >
+  //     <Route element={<NavBarRR />} >
   //       <Route path="/" element={<Home />} />
   //       <Route path="/about" element={<About />} />
   //       <Route path="/login" element={<Login />} />
@@ -84,7 +85,7 @@ export default function BasicPgRR() {
 
   //     <Routes>
 
-  //       <Route element={<NavLink />} >
+  //       <Route element={<NavBarRR />} >
   //         <Route path="/" element={<Home />} />
   //         <Route path="user" element={<UserList />} />
   //         
@@ -114,6 +115,8 @@ export default function BasicPgRR() {
   //   </div>
 
   // )
+                  
+           //React Router NavLink and Active Class
 
   return (
 
@@ -123,7 +126,7 @@ export default function BasicPgRR() {
 
       <Routes>
 
-        <Route element={<NavLink />} >
+        <Route element={<NavBarRR />} >
           <Route path="/" element={<Home />} />
           <Route path="user" element={<UserList />} />
           <Route path="/user/list?" element={<UserList />} />

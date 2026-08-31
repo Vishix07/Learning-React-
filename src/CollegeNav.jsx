@@ -7,9 +7,9 @@ export default function CollegeNav() {
             
             <div className="collage" >
                 <h3><Link to="/" className="link" >Go Back To Home</Link></h3>
-                <NavLink className="link" to=""  >Students</NavLink>
-                <NavLink className="link" to="Department" >Department</NavLink>
-                <NavLink className="link" to="Details" >Details</NavLink>
+                <Link className="link" to=""  >Students</Link>
+                <Link className="link" to="Department" >Department</Link>
+                <Link className="link" to="Details" >Details</Link>
                 <Outlet />
             </div>
         </div>

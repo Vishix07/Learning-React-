@@ -1440,8 +1440,24 @@ function App() {
    //React Router 
 
 
+   // return (
+
+   //    <div>
+
+   //       <BasicPgRR />
+
+   //    </div>
+
+   // )
+        
+    
+           //React Router NavLink and Active Class
+
+           //NavLink provides active class so it highlights the selected link  
+
+     
    return (
-      
+
       <div>
 
          <BasicPgRR />
@@ -1449,8 +1465,6 @@ function App() {
       </div>
 
    )
-
-
 
 }
 

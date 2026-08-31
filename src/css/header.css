@@ -18,7 +18,7 @@ body {
     width: auto;
     margin: auto;
     justify-content: space-around;
-    width: 500px;
+    width: 650px;
 }
 
 .header ul li {
@@ -46,4 +46,11 @@ body {
 
 .collage h1 {
     color: aqua;
+}
+.active{
+    font-weight: 650;
+    font-family: cursive;
+    background-color: rgb(51, 96, 81);
+    border-radius: 5px;
+    padding: 4px;
 }
