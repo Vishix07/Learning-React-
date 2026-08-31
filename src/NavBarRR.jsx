@@ -1,11 +1,12 @@
 import { Link,Outlet } from "react-router"
 import './css/header.css'
+import { NavLink } from "react-router"
 
 //CSS FONT
 
 
 
-export default function NavLink() {
+export default function NavBarRR() {
 
     return (
     //     <div>
@@ -46,33 +47,34 @@ export default function NavLink() {
        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
        <link href="https://fonts.googleapis.com/css2?family=Geo:ital@0;1&display=swap" rel="stylesheet" />
 
-                <Link className="link " to="/" style={{fontFamily:"Geo", fontSize:"35px" }} >Logo</Link>
+                <NavLink className="link " to="/" style={{fontFamily:"Geo", fontSize:"35px" }} >Logo</NavLink>
             </div>
             <div>
                 <ul>
                     <li>
-                        <Link className="link" to="/" >HOME</Link>
+                        <NavLink  className="link" to="/" >HOME</NavLink>
+                        {/* <NavLink className={({isActive})=>(isActive?'custom-active link':'link') }  to="/" >HOME</NavLink> */}
                     </li>
                     <li>
-                        <Link className="link" to="/in/user/about" >ABOUT</Link>
+                        <NavLink className="link" to="/in/user/about" >ABOUT</NavLink>
                     </li>
                     <li>
-                        <Link className="link" to="/in/user/login" >LOGIN</Link>
+                        <NavLink className="link" to="/in/user/login" >LOGIN</NavLink>
                     </li>
                     <li>
-                        <Link className="link" to="/college" >COLLEGE</Link>
+                        <NavLink className="link" to="/college" >COLLEGE</NavLink>
                     </li>
                     <li>
-                        <Link className="link" to="/user" >USER</Link>
+                        <NavLink className="link" to="/user" >USER</NavLink>
                     </li>
                     <li>
-                        <Link className="link" to="/user/list" >LIST</Link>
+                        <NavLink className="link" to="/user/list" >LIST</NavLink>
                     </li>
                 </ul>
             </div>
             
-        </div>
-        <Outlet />
+          </div>
+         <Outlet />
         </div>
     )
 

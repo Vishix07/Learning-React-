@@ -40,6 +40,7 @@ import BasicPgRR from "./BasicPgRR";
 
 
 
+
 function App() {
    // const [count, setCounter] = useState(0);
    // return <>
@@ -1456,15 +1457,24 @@ function App() {
            //NavLink provides active class so it highlights the selected link  
 
      
-   return (
+   // return (
 
-      <div>
+   //    <div>
 
-         <BasicPgRR />
+   //       <BasicPgRR />
 
-      </div>
+   //    </div>
 
-   )
+   // )
+
+
+              //Tailwind CSS
+
+         return (
+            <div>
+               <h2 className="bg-red-700 text-3xl border-green-600 border-5" >Tailwind CSS setup</h2>
+            </div>
+         )
 
 }
 
