@@ -35,6 +35,7 @@ import { BrowserRouter, Routes } from "react-router";
 import ReactRouter from "./ReactRouter";
 import Home from "./Home";
 import BasicPgRR from "./BasicPgRR";
+import LearnApi from "./LearnApi";
 
 
 
@@ -1470,11 +1471,21 @@ function App() {
 
               //Tailwind CSS
 
-         return (
+         // return (
+         //    <div>
+         //       <h2 className="bg-red-700 text-3xl border-green-600 border-5" >Tailwind CSS setup</h2>
+         //    </div>
+         // )
+
+       
+              // API
+
+   return (
+   
             <div>
-               <h2 className="bg-red-700 text-3xl border-green-600 border-5" >Tailwind CSS setup</h2>
+               <LearnApi />
             </div>
-         )
+   )
 
 }
 
