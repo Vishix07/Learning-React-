@@ -49,8 +49,8 @@ body {
 }
 .active{
     font-weight: 650;
-    font-family: cursive;
-    background-color: rgb(51, 96, 81);
+    /* font-family: cursive; */
+    /* background-color: rgb(51, 96, 81); */
     border-radius: 5px;
     padding: 4px;
 }

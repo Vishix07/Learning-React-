@@ -23,7 +23,7 @@ export default function ApiAndLoader() {
 
     return (
         <div>
-            <h1>Integrate JSON Server API and Loader</h1>
+            
              <ul style={{display: "flex", justifyContent: "space-between", fontWeight: "bold",}}>
                         <li>First Name</li>
                         <li>Last Name</li>

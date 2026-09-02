@@ -37,7 +37,7 @@ import Home from "./Home";
 import BasicPgRR from "./BasicPgRR";
 import LearnApi from "./LearnApi";
 import ApiAndLoader from "./ApiAndLoader";
-
+import Routes4API from "./Routes4API";
 
 
 
@@ -1492,10 +1492,19 @@ function App() {
 
 
 
-               //Integrate JSON Server API and Loader
+                //Integrate JSON Server API and Loader
+
+        // return(
+        //    < h1>Integrate JSON Server API and Loader</>
+        //    <ApiAndLoader />
+        // )
+
+        // Routes for Server API and User UI
 
         return(
-           <ApiAndLoader />
+                <div>
+                        <Routes4API />
+                </div>
         )
 }
 

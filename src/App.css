@@ -1,3 +1,12 @@
+.nav-list{
+  display: flex;
+  width: 400px;
+  justify-content: space-around;
+  list-style: none;
+  
+}
+
+
 .counter {
   font-size: 16px;
   padding: 5px 10px;
