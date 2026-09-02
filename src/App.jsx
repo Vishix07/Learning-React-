@@ -36,6 +36,7 @@ import ReactRouter from "./ReactRouter";
 import Home from "./Home";
 import BasicPgRR from "./BasicPgRR";
 import LearnApi from "./LearnApi";
+import ApiAndLoader from "./ApiAndLoader";
 
 
 
@@ -1480,13 +1481,22 @@ function App() {
        
               // API
 
-   return (
+   // return (
    
-            <div>
-               <LearnApi />
-            </div>
-   )
+   //          <div>
+   //             <LearnApi />
+   //          </div>
+   // )
+    
+               //Install JSON Server and Make API
 
+
+
+               //Integrate JSON Server API and Loader
+
+        return(
+           <ApiAndLoader />
+        )
 }
 
 export default App;
