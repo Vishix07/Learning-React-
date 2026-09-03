@@ -1,28 +1,41 @@
 {
-    "users": [
-        {
-            "name": "Vish",
-            "age": 21,
-            "email": "vish@example.com"
-        },
-        {
-            "name": "kimi",
-            "age": 20,
-            "email": "kimi@example.com"
-        },
-        {
-            "name": "Gorge",
-            "age": 46,
-            "email": "gorge@example.com"
-        },
-        {
-            "name": "Lewis",
-            "age": 41,
-            "email": "lewis@example.com"
-        },{
-            "name": "Max",
-            "age": 34,
-            "email": "max@example.com"
-        }
-    ] 
+  "users": [
+    {
+      "name": "Vish",
+      "age": 21,
+      "email": "vish@example.com",
+      "id": "eqYGXD5w9vw"
+    },
+    {
+      "name": "kimi",
+      "age": 20,
+      "email": "kimi@example.com",
+      "id": "BS9SUF1qvcM"
+    },
+    {
+      "name": "Gorge",
+      "age": 46,
+      "email": "gorge@example.com",
+      "id": "d01b9xyi1Dk"
+    },
+    {
+      "name": "Lewis",
+      "age": 41,
+      "email": "lewis@example.com",
+      "id": "s_dva5fJqMo"
+    },
+    {
+      "name": "Max",
+      "age": 34,
+      "email": "max@example.com",
+      "id": "cZYiM0medow"
+    },
+    {
+      "name": "Lendo",
+      "age": "21",
+      "email": "lendo@test",
+      "id": "6GINKQTXTNg"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
