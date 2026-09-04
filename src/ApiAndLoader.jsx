@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router";
 
 export default function ApiAndLoader() {
 
     const [loading, setLoading] = useState(false);
+    const navigate = useNavigate();
     const [userData, setUserData] = useState([]);
     const url = "http://localhost:3000/users";
     useEffect(() => {
@@ -31,6 +33,10 @@ export default function ApiAndLoader() {
             }
     }
 
+    const editUser = (id)=>{
+            navigate("/edit/" + id)
+    }
+
     return (
         <div>
 
@@ -54,6 +60,7 @@ export default function ApiAndLoader() {
                                 <li>{user.age}</li>
                                 <li>{user.email}</li>
                                 <button onClick={() => deleteUser(user.id)}>Delete</button>
+                                <button onClick={()=>editUser(user.id)} >Edit User</button>
                             </ul>
                         
                     )) : <h1>Loading...</h1>

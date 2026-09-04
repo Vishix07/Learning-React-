@@ -1,4 +1,4 @@
-import styled from "styled-components"
+// import styled from "styled-components"
 // import Header,{Login,Logout, userKey} from "./Header";
 // import { useState } from "react";
 // import Todo from "./TODO";
@@ -38,6 +38,7 @@ import BasicPgRR from "./BasicPgRR";
 import LearnApi from "./LearnApi";
 import ApiAndLoader from "./ApiAndLoader";
 import Routes4API from "./Routes4API";
+import  './app.css'
 
 
 
@@ -1501,11 +1502,30 @@ function App() {
 
         // Routes for Server API and User UI
 
-        return(
+        // return(
+        //         <div>
+        //                 <Routes4API />
+        //         </div>
+        // )
+
+
+        //Integrate API for Delete Method
+
+        // return (
+        //         <div>
+        //                 <Routes4API />
+        //         </div>
+        // )
+
+        // Edit User Detail Page
+
+        return (
                 <div>
                         <Routes4API />
                 </div>
         )
+
+
 }
 
 export default App;
