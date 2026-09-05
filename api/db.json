@@ -32,9 +32,15 @@
     },
     {
       "name": "Senna",
-      "age": "21",
-      "email": "senna@test",
+      "age": "24",
+      "email": "senna@test.com",
       "id": "GcisYdIyAFk"
+    },
+    {
+      "name": "Sam Alexgender",
+      "age": "18",
+      "email": "sam@test.com",
+      "id": "HZBFMvGw5Pc"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

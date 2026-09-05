@@ -13,7 +13,7 @@ export default function ApiAndLoader() {
     }, []);
 
     const getUserData = async () => {
-        
+
         let response = await fetch(url);
         response = await response.json();
         console.log(response);
@@ -22,19 +22,19 @@ export default function ApiAndLoader() {
 
     }
 
-    const deleteUser = async( id) => {
-        let response = await fetch(url+"/"+id,{
+    const deleteUser = async (id) => {
+        let response = await fetch(url + "/" + id, {
             method: "delete"
         })
-            getUserData();
-            response = await response.json();
-            if(response){
-                alert("record deleted")
-            }
+        getUserData();
+        response = await response.json();
+        if (response) {
+            alert("record deleted")
+        }
     }
 
-    const editUser = (id)=>{
-            navigate("/edit/" + id)
+    const editUser = (id) => {
+        navigate("/edit/" + id)
     }
 
     return (
@@ -42,27 +42,29 @@ export default function ApiAndLoader() {
 
             <ul style={{ display: "flex", justifyContent: "space-between", fontWeight: "bold", }}>
                 <li>First Name</li>
-                <li>Last Name</li>
+                <li>Age</li>
                 <li>Email</li>
                 <li>Action</li>
             </ul>
             {
                 !loading ?
-                    userData.map((user,index) => (
-                        
+                    userData.map((user, index) => (
 
-                            <ul key={index} style={{
-                                display: "flex",
-                                justifyContent: "space-between", border: "1px solid #251f1f",
-                                width: "100%", padding: "10px", margin: "10px 0px"
-                            }} >
-                                <li>{user.name}</li>
-                                <li>{user.age}</li>
-                                <li>{user.email}</li>
+
+                        <ul key={index} style={{
+                            display: "flex",
+                            justifyContent: "space-between", border: "1px solid #251f1f",
+                            width: "100%", padding: "10px", margin: "10px 0px"
+                        }} >
+                            <li>{user.name}</li>
+                            <li>{user.age}</li>
+                            <li>{user.email}</li>
+                            <li style={{ display: 'flex', gap: '8px' }}>
+                                <button onClick={() => editUser(user.id)}>Edit</button>
                                 <button onClick={() => deleteUser(user.id)}>Delete</button>
-                                <button onClick={()=>editUser(user.id)} >Edit User</button>
-                            </ul>
-                        
+                            </li>
+                        </ul>
+
                     )) : <h1>Loading...</h1>
             }
         </div>
