@@ -29,6 +29,12 @@
       "age": 34,
       "email": "max@example.com",
       "id": "cZYiM0medow"
+    },
+    {
+      "name": "Senna",
+      "age": "21",
+      "email": "senna@test",
+      "id": "GcisYdIyAFk"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
