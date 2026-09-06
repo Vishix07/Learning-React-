@@ -39,6 +39,7 @@ import LearnApi from "./LearnApi";
 import ApiAndLoader from "./ApiAndLoader";
 import Routes4API from "./Routes4API";
 import  './app.css'
+import ValidationOnInput from "./ValidationOnInput";
 
 
 
@@ -1535,9 +1536,18 @@ function App() {
 
         // Update Data with PUT API method
 
+        // return (
+        //         <div>
+        //                 <Routes4API />
+        //         </div>
+        // )
+
+        //Simple Validation on imput field in React js
+
+
         return (
                 <div>
-                        <Routes4API />
+                        <ValidationOnInput />
                 </div>
         )
 
