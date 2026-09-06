@@ -12,3 +12,6 @@
 .error:focus{
     outline: 1px solid red;
 }
+.red-color{
+    color: red;
+}

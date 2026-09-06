@@ -39,14 +39,14 @@ export default function ValidationOnInput() {
             <input className={nameErr?'error':''} type="text" placeholder="Enter Name" 
              onChange={handleName} />
              <br />
-             <span>{nameErr && nameErr}</span>
+             <span className="red-color" >{nameErr && nameErr}</span>
             <br /><br />
             <input className={passErr?'error':''} type="text" placeholder="Enter Password" 
              onChange={handlePassword} />
             <br /><br />
-            <span>{passErr && passErr}</span>
+            <span className="red-color" >{passErr && passErr}</span>
             <br />
-            <button disabled={nameErr} >Login</button>
+            <button disabled={nameErr || passErr } >Login</button>
         </div>
             
         </div>
