@@ -41,6 +41,7 @@ import Routes4API from "./Routes4API";
 import  './app.css'
 import ValidationOnInput from "./ValidationOnInput";
 import ValidationActionState from "./ValidationActionState";
+import UseReducerHook from "./UseReducerHook";
 
 
 
@@ -1556,11 +1557,23 @@ function App() {
 
          // Validation using useActionState hook in React
 
-         return(
-             <div>
-                <ValidationActionState />
-             </div>
-         )
+        //  return(
+        //      <div>
+        //         <ValidationActionState />
+        //      </div>
+        //  )
+
+        // useReducer Hook
+
+        //it is a better alter native of usestate hook 
+
+        return (
+            <div>
+                <UseReducerHook />
+            </div>
+        )
+        
+
 }
 
 export default App;
