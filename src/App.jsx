@@ -44,6 +44,7 @@ import ValidationActionState from "./ValidationActionState";
 import UseReducerHook from "./UseReducerHook";
 import UserLazyLoad from "./UserLazyload";
 import LazyLod from "./LazyLod";
+import USEapi from "./USEapi";
 
 
 
@@ -1577,11 +1578,19 @@ function App() {
 
         //Lazy Loading in React js
         
-       return (
-          <div>
-                <LazyLod />
-          </div>
-       )
+//        return (
+//           <div>
+//                 <LazyLod />
+//           </div>
+//        )
+
+         // 'use' API in React js 19
+
+         return(
+            <div>
+                <USEapi />
+            </div>
+         )
 
 }
 
