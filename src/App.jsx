@@ -42,6 +42,8 @@ import  './app.css'
 import ValidationOnInput from "./ValidationOnInput";
 import ValidationActionState from "./ValidationActionState";
 import UseReducerHook from "./UseReducerHook";
+import UserLazyLoad from "./UserLazyload";
+import LazyLod from "./LazyLod";
 
 
 
@@ -1567,12 +1569,19 @@ function App() {
 
         //it is a better alter native of usestate hook 
 
-        return (
-            <div>
-                <UseReducerHook />
-            </div>
-        )
+        // return (
+        //     <div>
+        //         <UseReducerHook />
+        //     </div>
+        // )
+
+        //Lazy Loading in React js
         
+       return (
+          <div>
+                <LazyLod />
+          </div>
+       )
 
 }
 

@@ -43,8 +43,7 @@ export default function UseReducerHook() {
             <input type="text" placeholder="Enter Address"
             onChange={(event)=>dispatch({val:event.target.value,type:'address'})} />
             <br /><br />
-            <button>Add Details</button>
-
+            
             <ul>
                 <li>Name :{state.name}</li>
                 <li>Password :{state.password}</li>
@@ -53,6 +52,10 @@ export default function UseReducerHook() {
                 <li>ADD :{state.address}</li>
 
             </ul>
+            <br /><br />
+            <button onClick={()=>console.log(state)
+            } >Add Details</button>
+
         </div>
        </div>
     )
