@@ -45,6 +45,7 @@ import UseReducerHook from "./UseReducerHook";
 import UserLazyLoad from "./UserLazyload";
 import LazyLod from "./LazyLod";
 import USEapi from "./USEapi";
+import ColorMixer from "./ColorMixer";
 
 
 
@@ -1586,11 +1587,19 @@ function App() {
 
          // 'use' API in React js 19
 
-         return(
-            <div>
-                <USEapi />
-            </div>
-         )
+        //  return(
+        //     <div>
+        //         <USEapi />
+        //     </div>
+        //  )
+
+        //Mini Project
+
+        return(
+                <div>
+                        <ColorMixer />
+                </div>
+        )
 
 }
 

@@ -1,0 +1,38 @@
+import { useState } from "react"
+
+export default function ColorMixer () {
+
+    const colors= JSON.parse(localStorage.getItem('color'))
+    const [r,setR] = useState(colors && colors.r?colors.r: 0);
+    const [g,setG] = useState(colors && colors.g?colors.g: 0);
+    const [b,setB] = useState(colors && colors.b?colors.b: 0);
+
+    const save=()=>{
+        localStorage.setItem("color",JSON.stringify({r,g,b}))
+    }
+    return(
+        <div>
+            <h1 >Color Mixer</h1>
+
+            <div style={{backgroundColor:'rgb('+r+','+g+','+b+')', height:400,width:400,display:"block",margin:"20px auto",border:"solid 5px "}} >
+             </div>
+             <div>   
+            <label htmlFor="">Red </label>
+            <input type="range" onChange={(event)=>setR(event.target.value) 
+            } min={0} max={255} value={r}  />
+            <br /><br />
+            
+            <label htmlFor="">Green</label>
+            <input type="range" onChange={(event)=>setG(event.target.value) 
+            } min={0} max={255} value={g} />
+            <br /><br />
+            
+            <label htmlFor="">Blue</label>
+            <input type="range" onChange={(event)=>setB(event.target.value) 
+            } min={0} max={255} value={b} />
+            <br /><br />
+            <button onClick={save} >Save Color Combination</button>
+            </div>
+        </div>
+    )
+}
