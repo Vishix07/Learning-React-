@@ -1579,11 +1579,11 @@ function App() {
 
         //Lazy Loading in React js
         
-//        return (
-//           <div>
-//                 <LazyLod />
-//           </div>
-//        )
+ //        return (
+ //           <div>
+ //                 <LazyLod />
+ //           </div>
+ //        )
 
          // 'use' API in React js 19
 
