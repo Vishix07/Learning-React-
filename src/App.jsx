@@ -1602,7 +1602,7 @@ function App() {
         )
 
         // completed basic of React today from code Step by step yt channel
-
+        // Remaing topic of React 19
 }
 
 export default App;
