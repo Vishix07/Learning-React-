@@ -11,7 +11,7 @@ export default function ColorMixer () {
         localStorage.setItem("color",JSON.stringify({r,g,b}))
     }
     return(
-        <div>
+        <div style={{background:" #4a7884"}}>
             <h1 >Color Mixer</h1>
 
             <div style={{backgroundColor:'rgb('+r+','+g+','+b+')', height:400,width:400,display:"block",margin:"20px auto",border:"solid 5px "}} >
